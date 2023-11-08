@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000000;
+    font-family: "Poppins";
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+.header {
+    display: flex;
+}
+.movie {
+    padding: 10px 50px;
+    color: #ffffff;
+    height: 100vh;
+}
+.movie .logo {
+    color: #d6262d;
+    text-decoration: none;
+}
+.movie .search-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 40px;
+}
+.movie input.search {
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.movie i.fa-solid {
+    color: #808080;
+}
+.movie i.fa-solid.fa-arrow-right-long {
+    cursor: pointer;
+}
+
+.movie .main {
+    display: none;
+    margin-top: 40px;
+}
+.movie .main .main-content {
+    margin-left: 60px;
+}
+.movie .main img {
+    width: 400px;
+}
+.movie .main .main-heading {
+    width: 950px;
+}
+.movie .main .main-heading .d-flex:first-of-type {
+    justify-content: space-between;
+}
+.movie .main .main-heading .d-flex:nth-of-type(2) {
+    margin-top: 10px;
+}
+.movie .main .main-heading h2 {
+    font-weight: 600;
+}
+.movie .main .main-heading .d-flex p {
+    color: #6a6a6a;
+}
+.movie .main .main-heading .d-flex p:nth-of-type(2) {
+    margin: 0 35px;
+    position: relative;
+}
+.movie .main .main-heading .d-flex p:nth-of-type(2)::after,
+.movie .main .main-heading .d-flex p:nth-of-type(2)::before {
+    content: "";
+    height: 20px;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    background-color: #6a6a6a90;
+    margin-right: 10px;
+}
+.movie .main .main-heading .d-flex p:nth-of-type(2)::before {
+    left: -17px;
+}
+.movie .main .main-overview {
+    margin-top: 50px;
+}
+.movie .main .main-overview .heading {
+    margin-bottom: 20px;
+}
+.movie .main .main-overview p {
+    font-size: 15px;
+}
+.movie .main .main-overview table td {
+    padding-top: 20px;
+}
+.movie .main .main-overview table .field {
+    margin-right: 30px;
+    color: #808080;
+}
+.movie .main .main-overview table p {
+    font-size: 12px;
+}
